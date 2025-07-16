@@ -460,7 +460,7 @@ navbar {
 
 
 .banner-img {
-    background-image: url(/App/img/banner.svg);
+    background-image: url(../images/images/banner.svg);
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -471,8 +471,7 @@ navbar {
     /* padding: 0px 6%; */
     display: flex;
 
-    p {
-
+    p {xxxxx
         position: absolute;
         margin: 0 auto;
         font-size: 60px;
