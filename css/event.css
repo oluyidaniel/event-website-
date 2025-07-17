@@ -108,7 +108,7 @@ nav {
 }
 
 .event--header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/App/img/bg-pix.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/bg-pix.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,33 +214,118 @@ nav {
     gap: 20px;
 }
 
-.card-pin {
-    width: 100%;
-    width: 350px;
-    height: auto;
-    background: rgba(8, 38, 143, 0.05);
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
+.top-card {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-.card-pin>img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-}
+        .orange {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-.card-pin>a h1 {
-    color: black;
-    font-size: 18px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-}
+            .text {
+                background-color: #FFE347;
 
-.card-pin>h1 {
-    font-size: 18px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-}
+            }
+        }
+
+        .colore {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            .text {
+                background-color: #EDFF71;
+            }
+        }
+
+        .blue {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            .text {
+                background-color: #5F62B7;
+            }
+        }
+
+        .red {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            .text {
+                background-color: #870404;
+                color: #fff;
+            }
+        }
+
+        .card {
+            width: 268px;
+            height: 330px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            background: #FFFFFF;
+            cursor: pointer;
+            .top--love {
+                position: relative;
+
+                #love {
+
+                    border-radius: 50%;
+                    color: white;
+                    position: absolute;
+                    left: 230px;
+                    top: 20px;
+                }
+
+            }
+
+            .top--love>#love:hover {
+                background-color: rgba(217, 217, 217, 1);
+                padding: 3px;
+                color: rgba(244, 69, 101, 1);
+            }
+
+            .text {
+                width: 110px;
+                height: 20px;
+                border-radius: 5px;
+                text-align: center;
+                padding: 2px;
+                margin: 9px 10px;
+                font-size: 12px;
+            }
+
+            .pad {
+                display: flex;
+                gap: 10px;
+                padding-left: 10px;
+                padding-right: 20px;
+
+                span {
+                    font-size: 13px;
+                }
+            }
+
+            .pad1 {
+                gap: 10px;
+                padding: 25px 10px;
+            }
+        }
+
+        .pix-1 {
+            padding-top: 5px;
+        }
+
+        .left-mov {
+            padding-left: 5px;
+        }
+    }
+
+    .card:hover {
+        box-shadow: 0px 4px 4px 4px rgba(241, 219, 75, 1);
+    }
+
+    h4 {
+        font-size: 13px;
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
 
 .text--down {
     display: flex;
@@ -305,7 +390,7 @@ nav {
 }
 
 .event--banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(/App/img/event-banner.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/event-banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: none;
