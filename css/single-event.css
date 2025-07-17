@@ -94,7 +94,7 @@ navbar {
 }
 
 .single-nav {
-    background-image: linear-gradient(rgba(32, 71, 211, 0.4),rgba(32, 71, 211, 0.4)), url(/App/img/single-pic.png);
+    background-image: linear-gradient(rgba(32, 71, 211, 0.4),rgba(32, 71, 211, 0.4)), url(../images/images/single-pic.png);
     width: 100%;
     height: 100vh;
     background-position: cnetr;
