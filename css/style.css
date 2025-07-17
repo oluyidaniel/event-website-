@@ -470,8 +470,7 @@ navbar {
     text-align: center;
     /* padding: 0px 6%; */
     display: flex;
-
-    p {xxxxx
+    p {
         position: absolute;
         margin: 0 auto;
         font-size: 60px;
