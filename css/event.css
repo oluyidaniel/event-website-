@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav-animate {
+    animation: fadeDownNav 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+@keyframes fadeDownNav {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ /* Fade-in for body */
+body.fade-in-load {
+  opacity: 0;
+  animation: fadeInBody 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,8 +33,6 @@
     outline: none;
     /* border: none; */
 }
-
-
 
 nav {
     display: flex;
@@ -38,6 +63,7 @@ nav {
     position: relative;
     font-size: 18px;
     text-decoration: none;
+    font-family: "Playfair Display", serif;
 }
 
 .bar>a:hover {
@@ -69,6 +95,7 @@ nav {
     width: 100px;
     height: 2.4rem;
     font-weight: 600;
+    font-family: "Playfair Display", serif;
 
     a {
         color: #fff;
@@ -103,7 +130,7 @@ nav {
 }
 
 .event--header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/bg-pix.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/bg-pix.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,9 +142,10 @@ nav {
     .txt {
         text-align: center;
         font-size: 3.5rem;
-        font-weight: 400;
         color: #fff;
         padding-top: 100px;
+        font-family: 'Poppins';
+        font-weight: 600;
     }
 
     .put-event {
@@ -134,6 +162,7 @@ nav {
             padding-bottom: 5px;
             padding-left: 20px;
             padding-right: 20px;
+            font-family: "roboto";
         }
 
         #event-here {
@@ -144,7 +173,10 @@ nav {
             border-style: solid;
             border-color: rgba(241, 219, 75, 1);
         }
-
+        #event-here::placeholder{
+            color: #dad7d7;
+            font-family: "Playfair";
+        }
         #sea-btn {
             background: rgba(231, 158, 3, 1);
             height: 40px;
@@ -158,11 +190,15 @@ nav {
             width: 260px;
             color: #fff;
             background-color: transparent;
+            padding: 0px 5px;
             border: 1px solid rgba(241, 219, 75, 1)
         }
-
+        #category::placeholder{
+            font-family: 'Playfair';
+        }
         option {
             background-color: rgba(231, 158, 3, 1);
+              font-family: 'Playfair';
         }
 
     }
@@ -179,6 +215,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    font-family: "poppins";
+    font-weight: 600;
 
 }
 
@@ -386,7 +424,7 @@ h4 {
 }
 
 .event--banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/event-banner.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/images/event-banner.webp);
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -406,6 +444,7 @@ h4 {
         font-weight: 500;
         /* padding: 100px 10px; */
         color: #fff;
+         font-family: "roboto";
     }
 }
 
@@ -430,6 +469,10 @@ h4 {
 .footer--div>h2 {
     font-size: 25px;
     padding-bottom: 10px;
+    font-family: "poppins", sans-serif;
+}
+.footer--div>p {
+    font-family: "roboto", sans-serif;
 }
 
 .in-put {
@@ -450,11 +493,10 @@ h4 {
         background: rgba(231, 158, 3, 1);
         border: 1px solid rgba(241, 219, 75, 1);
         color: white;
-
-        ::placeholder {
+    }
+    #search::placeholder {
             color: #fff;
         }
-    }
 }
 
 .footer-header {
@@ -477,18 +519,34 @@ h4 {
 
 .foter-1 {
     h1 {
-        font-size: 32px;
-        padding-bottom: 20px;
+        font-size: 28px;
+        font-family: "poppins", sans-serif;
     }
 
     p {
-        font-size: 20px;/'""?'
-        padding-bottom: 15px;
+        font-size: 20px;
+        padding-bottom: 10px;
+         font-family: "roboto";
     }
 }
 
 .push--down {
     padding-top: 150px;
+}
+.line-down{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.line-down::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #E9A804;
+  border-radius: 2px;
 }
 
 /* ===============web-interation============= */
@@ -560,6 +618,7 @@ h4 {
     .event--block {
         width: 100px;
         font-size: 13px;
+       
     }
 
     .foter {
@@ -814,7 +873,9 @@ h4 {
         }
     }
 }
-
+@media (max-width: 624px){
+    
+}
 @media (max-width: 425px) {
     .event--header {
         width: 100%;
@@ -998,6 +1059,9 @@ h4 {
             padding-bottom: 9px;
         }
     }
+}
+.block--event{
+     font-family: "Playfair";
 }
 
 @media (max-width: 375px) {
