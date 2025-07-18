@@ -13,6 +13,17 @@
         transform: translateY(0);
     }
 }
+ /* Fade-in for body */
+body.fade-in-load {
+  opacity: 0;
+  animation: fadeInBody 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
+}
 
 
 * {
