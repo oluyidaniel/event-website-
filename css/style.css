@@ -661,13 +661,13 @@ navbar {
         padding-bottom: 40px;
 
         h1 {
-            padding-bottom: 20px;
             font-size: 28px;
             font-family: "poppins", sans-serif;
         }
 
         p {
             padding-bottom: 20px;
+            padding-top: ;
             font-family: "roboto";
         }
     }
@@ -739,8 +739,21 @@ navbar {
         }
     }
 }
-
-
+.line-down{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.line-down::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: #E9A804;
+  border-radius: 2px;
+}
 /* ==========Web Reaction ============= */
 .banner {
     width: 100%;
@@ -1434,25 +1447,22 @@ navbar {
 
         .footer-class {
             display: flex;
-            text-align: center;
+            text-align: left;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: left;
             padding-top: 40px;
             padding-bottom: 40px;
 
-            h1 {
-                padding-bottom: 20px;
-            }
-
+        
             p {
-                padding-bottom: 20px;
+                padding-bottom: 10px;
             }
         }
-
+        .line-down{
+            font-size: 20px !important;
+        }
         h4 {
             text-align: center;
-
-
         }
     }
 }
@@ -1541,7 +1551,7 @@ navbar {
     .week {
         a {
             font-size: 30px !important;
-            color: rebeccapurple !important;
+            color: #000 !important;
         }
 
     }
@@ -1812,25 +1822,18 @@ navbar {
 
         .footer-class {
             display: flex;
-            text-align: center;
             flex-direction: column;
             justify-content: space-between;
             padding-top: 40px;
             padding-bottom: 40px;
 
-            h1 {
-                padding-bottom: 20px;
-            }
-
             p {
-                padding-bottom: 20px;
+                padding-bottom: 10px;
             }
         }
 
         h4 {
             text-align: center;
-
-
         }
     }
 } 
@@ -1950,5 +1953,4 @@ navbar {
             width: 40px !important;
         }
     }
-
 }
