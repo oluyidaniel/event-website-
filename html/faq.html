@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="/App/img/Ellipse 1.png" type="image/x-icon">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/icons/Ellipse 1.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="fade-in-load">
     <!-- ================HEADER-SECTION==================== -->
-    <header>
+    <header class="nav-animate">
         <nav>
             <div class="logo">
-                <img src="/App/img/Ellipse 1.png" alt="">
+                <img src="../images/icons/Ellipse 1.png" alt="">
             </div>
 
             <div class="bar">
-
                 <a href="../index.html">Home</a>
                 <a href="./event.html">Events</a>
                 <a href="./contact.html">Contact Us</a>
@@ -33,19 +33,18 @@
             </div>
         </nav>
     </header>
-    
 
     <!-- ==================FQA-SECTION====================== -->
 
-        <section class="fqa-real">
-            <div class="fqa-banner">
-                <h2>FQAs</h1>
-                    <h1>Aks Us Anything
-                </h2>
-                <p>Hve any question? Ask us here;</p>
-                <input type="search" name="search" id="search" placeholder="search">
-            </div>
-            <div>
+    <section class="fqa-real">
+        <div class="fqa-banner">
+            <h2>FQAs</h2>
+            <h1> Aks Us Anything</h1>
+            <p>Have any question? Ask us here;</p>
+            <input type="search" name="search" id="search" placeholder="search">
+            <i></i>
+        </div>
+        <div>
             <header>
                 <div class="real-que">
                     <div class="que-card">
@@ -104,45 +103,53 @@
                             utmost importance to us.</p>
                     </div>
                 </div>
-        </section>
+    </section>
     </header>
 
 
 
 
-        <!-- ======================FOOTER-SECTION=========================== -->
-        <footer class="footer">
-            <div class="footer-class">
-                <div>
-                    <h1>QUICKPASS</h1>
-                </div>
-                <div>
-                <h1>About Us</h1>
-                        <p>Project</p>
-                        <p>Track Record</p>
-                        <p>Pricing</p>
-                        <p>Service</p>
-                        <p>Sponsorship</p>
-                </div>
-                <div>
-                    <h1>Ticket</h1>
-                    <p>Check Event</p>
-                    <p>Pricings</p>
-                </div>
-                <div>
-                    <h1>Media</h1>
-                    <p>Pravacy Policy</p>
-                    <p>Terms & Service</p>
-                    <p>Development</p>
-                </div>
-                <div>
-                    <h1>contact</h1>
-                    <p>+2348142955122</p>
-                </div>
-
+    <!-- ======================FOOTER-SECTION=========================== -->
+    <footer class="footer">
+        <div class="footer-class">
+            <div>
+                <h1>QUICKPASS</h1>
             </div>
-            <h4>Copyright&copy;Ande.Media 2024</h4>
-        </footer>
+            <div>
+                <h1>About Us</h1>
+                <p>Project</p>
+                <p>Track Record</p>
+                <p>Pricing</p>
+                <p>Service</p>
+                <p>Sponsorship</p>
+            </div>
+            <div>
+                <h1>Ticket</h1>
+                <p>Check Event</p>
+                <p>Pricings</p>
+            </div>
+            <div>
+                <h1>Media</h1>
+                <p>Pravacy Policy</p>
+                <p>Terms & Service</p>
+                <p>Development</p>
+            </div>
+            <div>
+                <h1>contact</h1>
+                <p>+2348142955122</p>
+            </div>
+
+        </div>
+        <h4>Copyright&copy;Ande.Media 2024</h4>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

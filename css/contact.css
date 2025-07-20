@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     /* border: none; */
+}
+.nav-animate {
+    animation: fadeDownNav 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+@keyframes fadeDownNav {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ /* Fade-in for body */
+body.fade-in-load {
+  opacity: 0;
+  animation: fadeInBody 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
 }
 
 header {
@@ -41,6 +67,7 @@ navbar {
     position: relative;
     font-size: 18px;
     text-decoration: none;
+    font-family: "Playfair Display", serif;
 }
 
 .bar>a:hover {
@@ -71,6 +98,7 @@ navbar {
     width: 100px;
     height: 2.4rem;
     font-weight: 500;
+    font-family: "Playfair Display", serif;
 
     a {
         color: #000000;
@@ -114,16 +142,19 @@ navbar {
         h1 {
             font-size: 48px;
             padding-bottom: 20px;
+             font-family: "poppins", sans-serif;
         }
 
         p {
             font-size: 18px;
+            font-family: "roboto";
         }
     }
 
     .contact-zone {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding-top: 80px;
         padding-bottom: 50px;
 
@@ -145,17 +176,20 @@ navbar {
 
             h1 {
                 padding-bottom: 25px;
+                font-family: "poppins", sans-serif;
             }
 
             p {
                 padding-bottom: 25px;
                 font-size: 18px;
                 font-weight: 700;
+                font-family: "roboto";
             }
 
             span {
                 color: #870404;
                 font-weight: 700;
+                font-family: "Playfair Display", serif;
             }
         }
 
@@ -176,20 +210,40 @@ navbar {
         padding-bottom: 40px;
 
         h1 {
-            padding-bottom: 20px;
+            padding-bottom: 0px;
+            font-size: 28px;
+            font-family: "poppins";
         }
 
         p {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-family: "roboto";
         }
     }
 
     h4 {
         text-align: center;
-
-
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
     }
 }
+.line-down {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.line-down::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: #E9A804;
+    border-radius: 2px;
+}    
 
 @media (max-width: 768px) {
 
@@ -276,7 +330,89 @@ navbar {
     }
 }
 }
+@media (max-width: 600px){
+     .contact-heading {
+        .contact-head {
+            position: relative;
+            left: 25%;
+            padding-top: 90px;
+            text-align: center;
 
+            h1 {
+                font-size: 45px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .contact-zone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 80px;
+            padding-bottom: 50px;
+
+            .contact-card {
+                width: 100% !important;
+                margin-top: 50px !important;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    bottom: 30px;
+                }
+
+                h1 {
+                    padding-bottom: 25px;
+                }
+
+                p {
+                    padding-bottom: 25px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                span {
+                    color: #870404;
+                    font-weight: 700;
+                }
+            }
+
+        }
+     .footer {
+        max-width: 100%;
+        height: auto;
+        background-color: #000000;
+        color: #fff;
+        padding: 20px 6%;
+
+        .footer-class {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            justify-content: left;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+
+            p {
+                padding-bottom: 10px;
+            }
+        }
+
+        .line-down {
+            font-size: 20px !important;
+        }
+
+        h4 {
+            text-align: center;
+        }
+    }
+}
 @media screen and (max-width: 425px) {
   .navbar {
     flex-direction: column;
@@ -370,6 +506,7 @@ navbar {
 
   .footer-class h1 {
     font-size: 20px;
+
   }
 
   .footer-class p {
@@ -382,5 +519,6 @@ navbar {
     padding-top: 10px;
   }
 }
+
 
 

@@ -13,16 +13,17 @@
         transform: translateY(0);
     }
 }
- /* Fade-in for body */
+
+/* Fade-in for body */
 body.fade-in-load {
-  opacity: 0;
-  animation: fadeInBody 1.2s ease-in-out forwards;
+    opacity: 0;
+    animation: fadeInBody 1.2s ease-in-out forwards;
 }
 
 @keyframes fadeInBody {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -403,18 +404,21 @@ navbar {
             .top--love {
                 position: relative;
 
-                #love {
-
+                .love {
                     border-radius: 50%;
                     color: white;
                     position: absolute;
                     left: 230px;
                     top: 20px;
+                    transition: all 0.3s ease;
                 }
-
             }
 
-            .top--love>#love:hover {
+            .love.active {
+                color: rgba(244, 69, 101, 1);
+            }
+
+            .top--love>.love:hover {
                 background-color: rgba(217, 217, 217, 1);
                 padding: 3px;
                 color: rgba(244, 69, 101, 1);
@@ -539,6 +543,18 @@ navbar {
 
     }
 
+    .toggle-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .hid {
+        display: none;
+    }
+
+    .fqa-card.open .hid {
+        display: block;
+    }
+
     button {
         margin-top: 60px;
         margin-left: 43%;
@@ -599,10 +615,12 @@ navbar {
         h1 {
             font-size: 48px;
             padding-bottom: 20px;
+             font-family: "poppins", sans-serif;
         }
 
         p {
             font-size: 18px;
+            font-family: "roboto";
         }
     }
 
@@ -738,21 +756,24 @@ navbar {
         }
     }
 }
-.line-down{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
+
+.line-down {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
 }
-.line-down::after{
+
+.line-down::after {
     content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background-color: #E9A804;
-  border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: #E9A804;
+    border-radius: 2px;
 }
+
 /* ==========Web Reaction ============= */
 .banner {
     width: 100%;
@@ -1090,7 +1111,6 @@ navbar {
         }
     }
 }
-
 
 @media (max-width: 600px) {
     .logo>img {
@@ -1452,21 +1472,24 @@ navbar {
             padding-top: 40px;
             padding-bottom: 40px;
 
-        
+
             p {
                 padding-bottom: 10px;
             }
         }
-        .line-down{
+
+        .line-down {
             font-size: 20px !important;
         }
+
         h4 {
             text-align: center;
         }
     }
 }
-@media (max-width: 425px){
-     .logo>img {
+
+@media (max-width: 425px) {
+    .logo>img {
         width: 60%;
     }
 
@@ -1501,11 +1524,13 @@ navbar {
 
     .top-bottom {
         padding: 3px 0px;
+
         p {
             font-size: 10px;
             font-weight: 500;
             padding-bottom: 10px !important;
         }
+
         img {
             width: 25px;
             padding-left: 10px;
@@ -1543,7 +1568,7 @@ navbar {
 
         img {
             max-width: 100% !important;
-            width:  150px !important;
+            width: 150px !important;
         }
     }
 
@@ -1650,16 +1675,17 @@ navbar {
             padding-top: 5px;
             padding-bottom: 7px;
         }
+
         .top--love {
-                position: relative;
+            position: relative;
 
-                #love {
-                    left: 323px !important;
-                }
-
+            #love {
+                left: 323px !important;
             }
+
+        }
     }
-    
+
     .text {
         margin: 1px 5px !important;
     }
@@ -1675,6 +1701,7 @@ navbar {
             padding: 5px;
         }
     }
+
     .fqa {
         max-width: 100%;
         height: auto;
@@ -1740,6 +1767,7 @@ navbar {
 
     .contact-us {
         padding: 0px 6%;
+
         .contact-heading {
             display: flex;
             flex-direction: column;
@@ -1835,10 +1863,10 @@ navbar {
             text-align: center;
         }
     }
-} 
+}
 
 @media (max-width: 375px) {
-     .tittle-logo {
+    .tittle-logo {
         text-align: center;
         justify-content: center !important;
         gap: 10px !important;
@@ -1847,7 +1875,7 @@ navbar {
 
         img {
             max-width: 100% !important;
-            width:  150px !important;
+            width: 150px !important;
         }
     }
 
@@ -1943,7 +1971,7 @@ navbar {
 
         img {
             max-width: 100% !important;
-            width:  100px !important;
+            width: 100px !important;
         }
     }
 

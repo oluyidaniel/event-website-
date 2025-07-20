@@ -29,8 +29,4 @@ function goToNextPage() {
   window.location.href = "/App/html/single-event.html";
 }
 
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
 
